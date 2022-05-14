@@ -1,49 +1,75 @@
 /*-------------------------------------------- Преимущества */
 .benefits {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width:768px){
+   background-color: blue;
   }
-  .benefits-list {
+}
+.benefits-list {
+  @media screen and (min-width:768px){
     display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:1200px){
+  flex-wrap: nowrap;
   }
 
-  .benefits__text {
-    font-size: 14px;
-    line-height: 1.71;
-  }
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+
+.benefits-list__item {
+  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
   
-  
-  .benefits-list__item {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
+  @media screen and (min-width:768px) {
+    width: 354px;
+    &:nth-child(odd){
+    margin-right: 30px;
     }
   }
-  
-  .benefits__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primery-text-color); 
-    margin-bottom: 10px;
+  @media screen and (min-width:1200px) {
+margin-bottom: 0px;
+&:not(:last-child) {
+  margin-right: 30px;
+}
+}
+}
+
+.benefits__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-text-color); 
+  margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width:768px) {
+    text-align: start;
   }
-  
-  
-  .benefits-list__icon {
-    background-color: #f5f4fa;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hero + .benefits {
-    padding-bottom: 0px;
-  }
+}
+
+
+.benefits-list__icon {
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero + .benefits {
+  padding-bottom: 0px;
+}
