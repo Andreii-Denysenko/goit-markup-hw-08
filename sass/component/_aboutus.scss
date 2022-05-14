@@ -1,0 +1,60 @@
+/*------------------------------------------ Чем мы занимаемся */
+
+
+.aboutus {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .aboutus__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+  
+    margin-bottom: 50px;
+  }
+  
+  .aboutus-list {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .aboutus-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .aboutus-box{
+    position: relative;
+    .aboutus-box__img {
+      display: block;
+    }
+  }
+  
+  .aboutus-box__text{
+    background-color: rgba(47, 48, 58, 0.8);
+    width:370px ;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute; 
+    bottom: 0;
+    margin: 0px;
+  }
+  
+  
+  .aboutus__text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--main-light-color-text)
+  }
+  

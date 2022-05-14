@@ -1,0 +1,19 @@
+/* цвет основного текста #212121; */
+/* цвет второстепенного текста  #757575; */
+/* акцент цвет  #2196F3*/
+/* белий цвет #FFFFFF */
+/* цвет сылок подвала color rgba(255, 255, 255, 0.6); */
+/* цвет фона вторичный background: #F5F4FA; */
+/* Цвет подвала background: #2F303A; */
+:root {
+    --primery-text-color: #212121;
+    --secondary-text-color: #757575;
+    --main-light-color-text: #ffffff;
+    --accent-color: #2196f3;
+    /* Цвет подвала background: #2F303A; */
+    --secondary-background-color: #2f303a;
+    --color-contacts-bot: rgba(255, 255, 255, 0.6);
+    --color-logo-dark: #000000;
+    --color-hero-bt-hover: #188ce8;
+    --color-secondary-icon: #afb1b8;
+  }

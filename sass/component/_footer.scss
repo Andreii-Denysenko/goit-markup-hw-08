@@ -1,0 +1,138 @@
+.footer {
+    background-color: var(--secondary-background-color);
+    color: var(--main-light-color-text);
+    display: block;
+  
+    padding-bottom: 60px;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    .container {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+  .footer-social {
+    margin-left: 70px;
+  }
+  
+  .footer-social__list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .footer-social__list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footer-social__list__link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  svg{
+    fill: var(--main-light-color-text);
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  }
+  
+  .icon-send{
+    fill: var(--main-light-color-text);
+    position: absolute;
+    top: 22%;
+  }
+  .footer-social__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  
+    color: var(--main-light-color-text);
+  }
+  
+  
+  /* подписка */
+  .subscription{
+    margin-left: 93px;
+  }
+  .subscription__box{
+    display: flex;
+  }
+  .subscription__inp{
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    color: var(--main-light-color-text);
+    &:focus{
+      outline: none;
+    }
+  }
+
+  .subscription__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  
+    color: var(--main-light-color-text);
+  }
+  
+  .subscription__btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--main-light-color-text);
+    display: flex;
+    height: 50px;
+    width: 200px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+  margin-left: 12px;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  &:hover,
+  &:focus{
+    color: var(--main-light-color-text);
+    background-color: var(--color-hero-bt-hover);
+  }
+  }
+  
+  .subscription__ikon{
+    margin-left: 10px;
+  }
+  
+  
+
+  
+  /*------------------------------------Адресс */
+  .city-address {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-light-color-text);
+  
+    margin-bottom: 9px;
+  }
