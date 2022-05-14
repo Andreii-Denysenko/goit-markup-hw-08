@@ -5,10 +5,8 @@
   letter-spacing: 0.03em;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width:768px){
-   background-color: blue;
-  }
 }
+
 .benefits-list {
   @media screen and (min-width:768px){
     display: flex;
