@@ -10,7 +10,6 @@
   }
   
   .team-list {
-    // display: flex;
     margin-bottom: 0px;
     margin-top: 0px;
     @media screen and (min-width:768px){
@@ -18,6 +17,9 @@
       flex-wrap: wrap;
     }
 
+  }
+  .team-list__img{
+    width: 100%;
   }
   
   .team-list__item {

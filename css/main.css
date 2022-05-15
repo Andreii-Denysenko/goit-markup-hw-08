@@ -180,6 +180,10 @@
   }
 }
 
+.team-list__img {
+  width: 100%;
+}
+
 .team-list__item {
   width: 100%;
   text-align: center;
