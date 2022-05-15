@@ -3,17 +3,64 @@
     color: var(--main-light-color-text);
     display: block;
   
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 64px;
+    padding-top: 64px;
     margin-left: auto;
     margin-right: auto;
     .container {
       display: flex;
-      align-items: baseline;
+      flex-direction: column;
+      align-items: center;
+      // align-items: baseline;
+      @media screen and(min-width:768px){
+        display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+     align-items: baseline;
+    }
+    }
+    @media screen and(min-width:768px){
+
+    }
+  }
+  .section-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+    @media screen and(min-width:768px){
+      margin-left: 61px;
+      margin-bottom: 60px;
+    }
+    @media screen and(min-width:1200px){
+      margin-left: 0px;
+      margin-bottom: 0px;
+      align-items: flex-start;
     }
   }
   .footer-social {
-    margin-left: 70px;
+    // margin-left: 70px;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and(min-width:768px){
+      margin-left:165px;
+    }
+    @media screen and(min-width:1200px){
+      margin-left: 70px;
+      align-items: flex-start;
+    }
+  }
+  .footer-social__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    color: var(--main-light-color-text);
   }
   
   .footer-social__list {
@@ -49,23 +96,31 @@
     position: absolute;
     top: 22%;
   }
-  .footer-social__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
   
-    color: var(--main-light-color-text);
-  }
   
   
   /* подписка */
   .subscription{
-    margin-left: 93px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 63px;
+    @media screen and(min-width:768px){
+      margin-top: 0px;
+    }
+    @media screen and(min-width: 1200px){
+margin-left: 93px;
+align-items: flex-start;
+    }
   }
   .subscription__box{
-    display: flex;
+    
+    @media screen and(min-width: 1200px){
+      display: flex;
+          }
   }
   .subscription__inp{
     padding-left: 16px;
@@ -73,12 +128,22 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
+    
+    width: 290px;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
     color: var(--main-light-color-text);
     &:focus{
       outline: none;
     }
+    @media screen  and(min-width:480px){
+      width: 450px;
+      
+    }
+    @media screen  and(min-width:1200px){
+      width: 358px;}
   }
 
   .subscription__title {
@@ -87,7 +152,6 @@
     line-height: 16px;
     text-transform: uppercase;
     margin-bottom: 20px;
-  
     color: var(--main-light-color-text);
   }
   
@@ -107,7 +171,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 4px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,6 +182,10 @@
     color: var(--main-light-color-text);
     background-color: var(--color-hero-bt-hover);
   }
+  @media screen  and(min-width:1200px){
+    margin-left: 12px;
+    margin-right:0px ;
+   }
   }
   
   .subscription__ikon{
@@ -127,6 +196,15 @@
 
   
   /*------------------------------------Адресс */
+  .address-mob{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen  and(min-width:1200px){
+        align-items: flex-start;
+      }
+
+  }
   .city-address {
     font-size: 14px;
     font-style: normal;
@@ -135,4 +213,7 @@
     color: var(--main-light-color-text);
   
     margin-bottom: 9px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
