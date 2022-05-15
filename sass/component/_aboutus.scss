@@ -4,6 +4,10 @@
 .aboutus {
     margin-left: auto;
     margin-right: auto;
+  display: none;
+  @media screen and(min-width:1200px){
+    display: block;
+  }
   }
   
   .aboutus__title {
@@ -21,6 +25,7 @@
     display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
+    
   }
   
   .aboutus-list__item:not(:last-child) {

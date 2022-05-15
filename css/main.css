@@ -101,6 +101,12 @@
 .aboutus {
   margin-left: auto;
   margin-right: auto;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .aboutus {
+    display: block;
+  }
 }
 
 .aboutus__title {
