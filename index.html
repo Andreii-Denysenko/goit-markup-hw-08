@@ -19,7 +19,7 @@
     <title>Студия</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="section-nav container">
         <a class="logo logo--dark link" href="index.html"
           ><span class="logo--accent">Web</span>Studio</a
@@ -58,8 +58,54 @@
             >
           </li>
         </ul>
+        <button type="button" class="btn-menu-open">
+          <svg width="40" height="40" class="icon-menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+        <button type="button" class="btn-menu-close">
+          <svg width="40" height="40" class="icon-menu">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-list__item">
+            <a href="index.html" class="mob-menu-list__link  link">Студия</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a href="portfolio.html" class="mob-menu-list__link link">Портфолио</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mob-menu-bottom">
+        <ul class="list accent-effect mob-menu-list-contacts--top">
+          <li class="mob-menu-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts mob-menu-contacts--mail link"
+            >
+              
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mob-menu-contacts__item">
+            <a href="tel:+380961111111" class="contacts mob-menu-contacts--tel link">
+              
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+      </div>
+      </div>
+    </header>
     <main>
       <!--Section 1 hero-->
       <section class="hero">
@@ -634,5 +680,6 @@
   </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
