@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфолио</title>
   </head>
   <body>
     <header class="header">
@@ -51,7 +52,68 @@
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        <button type="button" class="btn-menu-open">
+          <svg width="40" height="40" class="icon-menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+        <button type="button" class="btn-menu-close">
+          <svg width="40" height="40" class="icon-menu">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-list__item">
+            <a href="index.html" class="mob-menu-list__link  link">Студия</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a href="portfolio.html" class="mob-menu-list__link link">Портфолио</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mob-menu-bottom">
+        <ul class="list accent-effect mob-menu-list-contacts--top">
+          <li class="mob-menu-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts mob-menu-contacts--mail link"
+            >
+              
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mob-menu-contacts__item">
+            <a href="tel:+380961111111" class="contacts mob-menu-contacts--tel link">
+              
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <div class="mob-social-media">
+        <ul class="mob-social-media-list">
+          <li class="mob-social-media__item">
+            <a href="" class="mob-social-media__link">Instagram<span class="decor-strip"></span></a>
+          </li>
+          <li class="mob-social-media__item">
+            <a href="" class="mob-social-media__link">Twitter<span class="decor-strip"></span></a>
+          </li>
+          <li class="mob-social-media__item">
+            <a href="" class="mob-social-media__link">Facebook<span class="decor-strip"></span></a>
+          </li>
+          <li class="mob-social-media__item">
+            <a href="" class="mob-social-media__link">LinkedIn</a>
+          </li>
+        </ul>
+
+        
+        </div>
     </header>
     <main>
       <!-- Портфолио -->
@@ -262,7 +324,7 @@
           <a class="logo logo--light link" href="index.html"
             ><span class="logo--accent">Web</span>Studio</a
           >
-          <address>
+          <address class="address-mob">
             <p class="city-address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="list accent-effect">
               <li>
@@ -281,8 +343,7 @@
           </address>
         </div>
         <div class="footer-social">
-          <h3 class="footer-social__title">Присоеденяйтесь</h3>
-          <div>
+          <h2 class="footer-social__title">Присоеденяйтесь</h2>
             <ul class="footer-social__list">
               <li class="footer-social__list__item">
                 <a href="" class="footer-social__list__link">
@@ -313,24 +374,21 @@
                 </a>
               </li>
             </ul>
-          </div>
         </div>
-        <form>
-          <div class="subscription">
-            <h3 class="subscription__title">Подпишитесь на рассылку</h3>
-          <div class="subscription__box">
-            <label for="subscription"></label>
-            <input 
-          name="subscription"
-          placeholder="E-mail"
-          type="email"
-          class="subscription__inp"
-          id="subscription"
-          >
-          <button  type="submit" class="button subscription__btn">Подписаться<span class="subscription__ikon"><svg class="icon-send" width="24px" height="24px"><use href="./images/icons.svg#icon-icon-send"></use></svg></span></button>
-          </div>
+
+        <form class="subscription">
+          <h2 class="subscription__title">Подпишитесь на рассылку</h2>
+        <div class="subscription__box">
+        <input 
+        name="subscription"
+        placeholder="E-mail"
+        type="email"
+        class="subscription__inp"
+        id="subscription"
+        >
+        <button type="submit" class="button subscription__btn">Подписаться<span class="subscription__ikon"><svg class="icon-send" width="24px" height="24px"><use href="./images/icons.svg#icon-icon-send"></use></svg></span></button>
         </div>
-      </form>
+    </form>
       </div>
     </footer>
     <script src="./js/menu.js"></script>

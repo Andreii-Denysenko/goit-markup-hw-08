@@ -31,15 +31,32 @@
     padding-left: 0px;
     margin-left: auto;
     align-items: center;
+    @media screen  and(min-width:768px){
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media screen  and(min-width:1200px){
+      flex-direction: row;
+    }
   }
   
   .list-contacts--top .contacts__item + .contacts__item {
-    margin-left: 50px;
+    
+    @media screen  and(min-width:1200px){
+      margin-left: 50px;
+    }
   }
   
   .contacts__item {
     display: flex;
     align-items: center;
+    @media screen  and(min-width:768px){
+      margin-bottom: 10px;
+    }
+    @media screen  and(min-width:1200px){
+      margin-bottom: 0px;
+    }
   }
   
   .icon-envelope {
