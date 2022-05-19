@@ -120,7 +120,7 @@
 }
 
 .portfolio-list__leaving-text{
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--main-light-color-text);
@@ -136,6 +136,9 @@
   left: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(min-width:480px){
+    font-size: 18px; 
+  }
   }
   
   .portfolio-list__cards__title {

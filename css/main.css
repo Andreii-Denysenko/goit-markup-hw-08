@@ -521,11 +521,21 @@
   transform: translate(-50%, -50%) skew(360deg) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 580px;
-  width: 528px;
+  min-width: 290px;
   background-color: var(--main-light-color-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close {
@@ -555,12 +565,17 @@
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200) {
+  .modal-title {
+    font-size: 20px;
+  }
 }
 
 .modal-input {
@@ -624,13 +639,14 @@
 }
 
 .modal-check-text {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column-reverse;
 }
 .modal-check-text::before {
   content: "";
@@ -639,6 +655,22 @@
   border: 2px solid var(--color-logo-dark);
   border-radius: 3px;
   margin-right: 8px;
+}
+@media screen and (min-width: 480px) {
+  .modal-check-text {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-check-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-check-text {
+    font-size: 14px;
+  }
 }
 
 .modal-check:checked + .modal-check-text::before {
@@ -824,7 +856,7 @@
 }
 
 .portfolio-list__leaving-text {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--main-light-color-text);
@@ -839,6 +871,11 @@
   left: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .portfolio-list__leaving-text {
+    font-size: 18px;
+  }
 }
 
 .portfolio-list__cards__title {
